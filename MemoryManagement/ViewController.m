@@ -25,6 +25,22 @@
     
     NSLog(@"Hi");
     
+    NSString *name = [[NSString alloc]initWithString:@"nick"];
+    [name retain];
+    [name retain];
+    
+    [name release];
+    [name release];
+    
+   
+   
+    
+    [name release];
+    NSLog(@"Name:%@",name.description);
+    name = nil;
+    
+    
+    
 }
 
 
