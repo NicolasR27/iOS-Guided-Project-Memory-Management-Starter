@@ -55,8 +55,15 @@
     Car *honda =[[[Car alloc] initWithMake:@"Civic"] autorelease];
     
     Person *person =[[Person alloc]initWithCar:honda];
+    [honda release];
     
-    person.car =[[[Car alloc] initWithMake:@"Forester"] autorelease];
+    person.car = honda;
+    
+    Car *subaru =[[Car alloc] initWithMake:@"Forester"];
+    person.car = subaru;
+    [subaru release];
+   
+    person.car =subaru;
     
  //   self.person = person;
     
