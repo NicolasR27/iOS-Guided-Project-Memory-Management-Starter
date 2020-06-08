@@ -23,6 +23,7 @@
 
     // TODO: Disable ARC in settings
     
+    
     NSLog(@"Hi");
     
     NSString *name = [[NSString alloc]initWithString:@"nick"];
@@ -45,9 +46,23 @@
     [favoriteColor release];
     
     
+    NSString *color2=[[[NSString alloc]initWithString:@"Red"]autorelease];
+    [colors addObject:color2];
     [colors release];
      colors = nil;
     
+    
+    Car *honda =[[[Car alloc] initWithMake:@"Civic"] autorelease];
+    
+    Person *person =[[Person alloc]initWithCar:honda];
+    
+    person.car =[[[Car alloc] initWithMake:@"Forester"] autorelease];
+    
+ //   self.person = person;
+    
+    
+    [person release];
+    person = nil;
 }
 
 
