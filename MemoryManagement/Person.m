@@ -36,7 +36,7 @@
 - (void)setCar:(Car *)car
 {
     
-    if (car != car) {
+    if (car != _car) {
         
     [_car release];
     _car = [car retain];
