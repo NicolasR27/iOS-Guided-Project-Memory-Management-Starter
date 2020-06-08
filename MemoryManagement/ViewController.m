@@ -33,13 +33,20 @@
     [name release];
     
    
-   
-    
     [name release];
     NSLog(@"Name:%@",name.description);
     name = nil;
     
+    NSMutableArray *colors =[[NSMutableArray alloc]init];
+    NSLog(@"colors:%@",colors);
     
+    NSString *favoriteColor = [[NSString alloc]initWithString:@"Blue"];
+    [colors  addObject:favoriteColor];
+    [favoriteColor release];
+    
+    
+    [colors release];
+     colors = nil;
     
 }
 
