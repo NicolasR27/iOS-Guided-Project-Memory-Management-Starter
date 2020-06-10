@@ -21,7 +21,6 @@
 {
     [super viewDidLoad];
 
-    // TODO: Disable ARC in settings
     
     
     NSLog(@"Hi");
@@ -31,7 +30,7 @@
     [name retain];
     
     [name release];
-//    [name release];
+
     
    
     [name release];
@@ -66,7 +65,6 @@
     person.car =subaru;
     
  //   self.person = person;
-    
     
     [person release];
     person = nil;

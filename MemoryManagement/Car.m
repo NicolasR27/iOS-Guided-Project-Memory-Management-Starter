@@ -21,7 +21,7 @@
     return self;
 }
 
-// TODO: Implement autoreleased class car method
+
 
 +(instancetype) carWithMake:(NSString *) make;{
 
@@ -42,8 +42,8 @@ return [[[Car alloc] initWithMake:make] autorelease];
 
 - (NSString *)description
 {
-    // TODO: Implement a standard autoreleasing method.
- //   NSString *description = [[NSString alloc] initWithFormat:@"Car: %@", self.make];
+   
+
     NSString *description = [NSString stringWithFormat:@"Car: %@", self.make];
     return description;
 }
